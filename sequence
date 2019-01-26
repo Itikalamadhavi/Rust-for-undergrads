@@ -1,0 +1,53 @@
+use std::io;
+fn main()
+{
+	println!("3,4,7,8,11,_\n4,6,12,18,30,42,_\ni,2,6,24,_\n");
+        let mut sc;
+	println!("enter 1");
+	let mut n1=String::new();
+	io::stdin().read_line(&mut n1).expect("error");
+    	let guess: u32=n1.trim().parse().expect("");
+	println!("enter 2");
+	let mut n2=String::new();
+	io::stdin().read_line(&mut n2).expect("error");
+    	let guess2: u32=n2.trim().parse().expect("");
+	println!("enter  3");
+	let mut n3=String::new();
+	io::stdin().read_line(&mut n3).expect("error");
+    	let guess3: u32=n3.trim().parse().expect("");
+	let a1=12;
+	let a2=60;
+	let a3=120;
+	if guess==a1
+	{
+		sc=0;
+		sc=sc+1;
+		
+	}
+	else
+	{
+		sc=0;
+	}
+	println!("your score is:{}",sc);
+        if guess2==a2
+	{
+		sc=0;
+		sc=sc+1;	
+	}
+	else
+	{
+		sc=0;
+	}
+	println!("your score is:{}",sc);
+        if guess3==a3
+	{
+		sc=0;
+		sc=sc+1;	
+	}
+	else
+	{
+		sc=0;
+	}
+	println!("your score is:{}",sc);    
+       
+}

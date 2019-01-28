@@ -1,0 +1,14 @@
+extern crate rand;
+	use rand::Rng;
+	fn main() {
+	let mut rng = rand::thread_rng();
+	println!( " ------");
+	println!(" |    |");
+  //selecting the range of numbers
+  //printing in the form of dice
+	println!(" | {}  |", rng.gen_range(0,7));
+	println!(" |    |");
+	println!(" ------");
+	
+	
+	}

@@ -1,9 +1,12 @@
 use std::io;
 fn main()
 {
+	considering few questions/puzzles/series
 	println!("3,4,7,8,11,_\n4,6,12,18,30,42,_\ni,2,6,24,_\n");
+	//here 'sc' is the count of scores
         let mut sc;
 	println!("enter 1");
+	//reading the input from the keyboard
 	let mut n1=String::new();
 	io::stdin().read_line(&mut n1).expect("error");
     	let guess: u32=n1.trim().parse().expect("");
@@ -15,9 +18,11 @@ fn main()
 	let mut n3=String::new();
 	io::stdin().read_line(&mut n3).expect("error");
     	let guess3: u32=n3.trim().parse().expect("");
+	//answers for the series
 	let a1=12;
 	let a2=60;
 	let a3=120;
+	//comparing the answers
 	if guess==a1
 	{
 		sc=0;
